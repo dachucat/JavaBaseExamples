@@ -10,6 +10,8 @@
     2 计算机基础原理： https://github.com/xiaolincoder/CS-Base
     3 计算机基础算法： https://github.com/chefyuan/algorithm-base
     4 Java Web应用开发技术与案例教程例题与习题代码: https://github.com/Hackergeek/JavaWebBase
+    5: 各种学习资源: https://www.kancloud.cn/apachecn/howtodoinjava-zh/1953371
+    6: 运维工具： https://github.com/guohongze/adminset
 # 账号：
     milk: 2917462604@qq.com
     deriick: 812062797@qq.com
@@ -21,3 +23,20 @@
     Remote -> |  jira:8888
     Pycharm: python 工具，日常文档管理
     Certbot: htpps 免费证书
+    ansible: 自动化安装
+# java dao
+  mysql -> spring(model mapper(dao) = interface(数据库操作接口)  )
+  mybatisplus:
+  SysRoleMenuMapper -> class SysRoleMenuMapperImpl imp SysRoleMenuMapper {}
+  model | mapper(dao) | service | controller
+  model: 表记录
+  mapper: 表操作, 增删改查
+  service: 实现业务, interface -> impl,  inerface 声明接口， impl 真正的实现, mapper(dao)实现
+  controller: 业务的接口  用input 参数 调用 service 获取输出参数 输出， 缝合, 实现api接口，使用postman测试
+  mvc： 模型, 后台开发主要模型
+  postman: api 调用\测试工具
+  
+  Spring: 当类声明是：@Service @Component @RestController： 当用 @Resource @Autowired 引用一个interface 的时候，
+  预先实现业务，然后完善
+# 安装:
+  mysql, postman
