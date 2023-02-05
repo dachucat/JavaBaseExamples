@@ -40,3 +40,18 @@
   预先实现业务，然后完善
 # 安装:
   mysql, postman
+# 数据库概念:
+  增，删，改，查
+  create table:
+  drop table;
+  insert:
+  delete:
+  update:
+  select:
+  index:
+  join:
+  foreign key:
+    1 - 1:  
+    1 - *:   user -> book
+    * - *    author * author_book *book
+  逻辑 -》 join -》 index
