@@ -55,3 +55,40 @@
     1 - *:   user -> book
     * - *    author * author_book *book
   逻辑 -》 join -》 index
+
+  CREATE TABLE `user` (
+  `id` bigint NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `name` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+  ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+  CREATE TABLE `author` (
+  `id` bigint NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `name` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+  ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+  CREATE TABLE `book` (
+  `id` bigint NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `name` varchar(100) NOT NULL,
+  `user_id` bigint NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `book_user_id_IDX` (`user_id`) USING BTREE,
+  CONSTRAINT `book_FK` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)
+  ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+  CREATE TABLE `book_author` (
+  `id` bigint NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `book_id` bigint NOT NULL,
+  `author_id` bigint NOT NULL,
+  PRIMARY KEY (`id`)
+  ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+  CREATE TABLE `user_auth` (
+  `id` bigint NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `type` varchar(32) NOT NULL,
+  `user_id` bigint NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_auth_user_id_IDX` (`user_id`) USING BTREE
+  ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
