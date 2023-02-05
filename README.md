@@ -56,6 +56,10 @@
     * - *    author * author_book *book
   逻辑 -》 join -》 index
 
+  SELECT b.name as book_name, u.name as user_name  from book b join `user` u on b.user_id  = u.id WHERE  b.id = 1;
+
+  SELECT * from book_author ba join book b on b.id  = ba.book_id JOIN author a on a.id  = ba.author_id where ba.book_id  = 3;
+
   CREATE TABLE `user` (
   `id` bigint NOT NULL AUTO_INCREMENT COMMENT '主键',
   `name` varchar(100) NOT NULL,
