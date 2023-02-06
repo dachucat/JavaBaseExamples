@@ -12,6 +12,7 @@
     4 Java Web应用开发技术与案例教程例题与习题代码: https://github.com/Hackergeek/JavaWebBase
     5: 各种学习资源: https://www.kancloud.cn/apachecn/howtodoinjava-zh/1953371
     6: 运维工具： https://github.com/guohongze/adminset
+    7: spring cloud 代码: https://github.com/search?q=spring+cloud+kit
 # 账号：
     milk: 2917462604@qq.com
     deriick: 812062797@qq.com
@@ -24,6 +25,16 @@
     Pycharm: python 工具，日常文档管理
     Certbot: htpps 免费证书
     ansible: 自动化安装
+# project lists:
+  https://github.com/dachucat/java-common-spring-boot-starter
+  https://github.com/dachucat/java-common-db-spring-boot-starter
+  https://github.com/dachucat/java-common-core
+  https://github.com/dachucat/java-commons
+  https://github.com/dachucat/java-wallet
+  https://github.com/dachucat/java-members
+  https://github.com/dachucat/java-business
+  https://github.com/dachucat/java-framework  
+
 # java dao
   mysql -> spring(model mapper(dao) = interface(数据库操作接口)  )
   mybatisplus:
@@ -53,7 +64,7 @@
   foreign key:
     1 - 1:  
     1 - *:   user -> book
-    * - *    author * author_book *book
+    * - *    author * author_book * book
   逻辑 -》 join -》 index
 
   SELECT b.name as book_name, u.name as user_name  from book b join `user` u on b.user_id  = u.id WHERE  b.id = 1;
@@ -96,3 +107,10 @@
   PRIMARY KEY (`id`),
   UNIQUE KEY `user_auth_user_id_IDX` (`user_id`) USING BTREE
   ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+# 常用工具:
+  jira:   大型，项目管理工具 
+  confluence:   wiki 记录工具
+  禅道：   国产，中型的项目管理工具
+  
+  ...
