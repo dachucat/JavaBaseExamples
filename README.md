@@ -13,6 +13,7 @@
     5: 各种学习资源: https://www.kancloud.cn/apachecn/howtodoinjava-zh/1953371
     6: 运维工具： https://github.com/guohongze/adminset
     7: spring cloud 代码: https://github.com/search?q=spring+cloud+kit
+    8: spring clod alibaba: https://blog.csdn.net/zhangzhanpu/article/details/120314551
 # 账号：
     milk: 2917462604@qq.com
     deriick: 812062797@qq.com
