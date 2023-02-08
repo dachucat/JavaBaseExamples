@@ -129,8 +129,10 @@
      (role_id, menu_id)
      VALUES(1, 2);
 
-    3. 配置application.properties e2cef.datasource.* 字段
+  3. 配置application.properties e2cef.datasource.* 字段
 
-  4。 自己建立 user, book, author, book_author
+  4。 自己建立 user, book, author, book_author 表
+      先user 建立 account, password, name 字段
+      建立 UserController, 在UserController 建立 login api, 并且用account, password 验证登陆
       
       
