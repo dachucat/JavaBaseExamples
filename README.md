@@ -116,6 +116,12 @@
   
   ...
 
+# creage .ssh
+  cd ~/
+  rm -rf .ssh
+  ssh-keygen
+  cat ~/.ssh/id_rsa.pub
+
 # members mysql 数据库配置:
   1。 建立一个数据库 user-center
   2. 创建表：
