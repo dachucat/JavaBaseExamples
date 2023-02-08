@@ -124,5 +124,13 @@
      `menu_id` int(11) NOT NULL,
      PRIMARY KEY (`role_id`,`menu_id`)
      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
-  3. 配置application.properties e2cef.datasource.* 字段 
+
+     INSERT INTO `user-center`.sys_role_menu
+     (role_id, menu_id)
+     VALUES(1, 2);
+
+    3. 配置application.properties e2cef.datasource.* 字段
+
+  4。 自己建立 user, book, author, book_author
+      
       
