@@ -115,3 +115,14 @@
   禅道：   国产，中型的项目管理工具
   
   ...
+
+# members mysql 数据库配置:
+  1。 建立一个数据库 user-center
+  2. 创建表：
+     CREATE TABLE `sys_role_menu` (
+     `role_id` int(11) NOT NULL,
+     `menu_id` int(11) NOT NULL,
+     PRIMARY KEY (`role_id`,`menu_id`)
+     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
+  3. 配置application.properties e2cef.datasource.* 字段 
+      
