@@ -131,7 +131,7 @@
      PRIMARY KEY (`role_id`,`menu_id`)
      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
 
-     INSERT INTO `user-center`.sys_role_menu
+     INSERT INTO sys_role_menu
      (role_id, menu_id)
      VALUES(1, 2);
 
@@ -141,4 +141,23 @@
       先user 建立 account, password, name 字段
       建立 UserController, 在UserController 建立 login api, 并且用account, password 验证登陆
       
-      
+# git branch 分支, git tag: tag
+  dev, test, release_a release_b, main(release_a + release_b)
+  dev, milk, dericck, fly
+  test,
+  release,
+
+  本地服务器，开发服务器，测试服务， 体验环境, 生产环境
+  milk/xxx,  dev,     test,             release_a/rlease_b 
+  java + mysql, reis
+
+# job 分配，
+  milk：book 管理
+  fly： user 管理
+  deriick：ahutor 管理
+
+# java 概念:
+  java bean: property -> method
+  
+  
+  
