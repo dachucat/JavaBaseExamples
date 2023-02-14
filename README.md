@@ -158,6 +158,11 @@
 
 # java 概念:
   java bean: property -> method
-  
+
+# ****知识点*****
+  2023-02-14:
+  Annotation: RestController -> PostMapping(Get, Delete ...) -> RequestBody: java 基础语法, Spring(listAnnotationBy(RequestBody )), post body: 看 postman 的 post body
+  package: 作用域的应用， en， vo, dto Model 越来越多，用包来规划model 。。。
+  http 请求方法规范与应用： post get put delete， post,put,delete（params，body） get（params）
   
   
