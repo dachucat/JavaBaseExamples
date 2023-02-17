@@ -192,8 +192,13 @@ VALUES(1, 2);
   Annotation: RestController -> PostMapping(Get, Delete ...) -> RequestBody: java 基础语法, Spring(listAnnotationBy(RequestBody )), post body: 看 postman 的 post body
   package: 作用域的应用， en， vo, dto Model 越来越多，用包来规划model 。。。
   http 请求方法规范与应用： post get put delete， post,put,delete（params，body） get（params）
-  
-  
+  2023-02-16:
+  数据库字段设计： 字符串长度、int、bigint等等长度设计，要平衡业务的需求与资源占用，要有重点规划，不能无目的设计。
+  数据库索引使用： 注意设计性，资源消耗，和需求
+  数据库基于上下文的id引用的方法：  不适用，记录特别多、插入性能要求特别高
+  milk： 书类管理： 一本书有多个种类， 每个种类每个月的借书数量
+  derrick: 作者： 书的作者，作者的借阅数量，作者的书的数量
+  自由发挥，完善图鼓管管理系统
 =======
 4。 自己建立 user, book, author, book_author 表
 先user 建立 account, password, name 字段
