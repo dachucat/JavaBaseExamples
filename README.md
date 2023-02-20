@@ -199,6 +199,61 @@ VALUES(1, 2);
   milk： 书类管理： 一本书有多个种类， 每个种类每个月的借书数量
   derrick: 作者： 书的作者，作者的借阅数量，作者的书的数量
   自由发挥，完善图鼓管管理系统
+  2023-02-20
+  git的原理:
+        milk_dev:
+            0: haha
+        derrick_dev:
+            0: aaaa
+        kee_dev:
+            0: cccc
+        dev:
+            a: dev: <- milk_dev push
+            0: haha
+            b: dev: <- derrick_dev commit, pull, 解决冲突, push
+            0: haha
+            1: aaaa
+            c: milk_dev: <- dev merged
+            0: haha
+            1: aaaa
+        dev:
+        branch(milk_dev)
+        milk_dev merged dev
+        derrick_dev merged dev
+        dev merged milk_dev
+        dev merged derrick_dev
+        dev -> release 1.0
+        milk_dev merged dev
+        derrick_dev merged dev
+        dev merged milk_dev
+        dev merged derrick_dev
+        milk_dev merged dev
+        derrick_dev merged dev
+        dev merged milk_dev
+        dev merged derrick_dev
+        release 1.0 -> 
+            fix_bug_03223
+        dev: <- release 1.0.1
+        milk_dev merged dev
+        derrick_dev merged dev
+        dev merged milk_dev
+        dev merged derrick_dev
+        milk_dev merged dev
+        derrick_dev merged dev
+        dev merged milk_dev
+        dev merged derrick_dev
+
+        dev <- milk
+        fake MemberController
+        dev <_ derrick
+        real MemberController
+        milk <- dev
+        use fake MemberController error
+        use real MemberController
+        dev <- milk
+        dev <- real_MemberController 
+    
+            
 =======
 4。 自己建立 user, book, author, book_author 表
 先user 建立 account, password, name 字段
