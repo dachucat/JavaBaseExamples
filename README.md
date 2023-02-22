@@ -252,6 +252,14 @@ VALUES(1, 2);
         use real MemberController
         dev <- milk
         dev <- real_MemberController 
+  2023-2-22:
+    本地git 仓库
+    cd /f
+    mkdir -p reps/demo.git
+    cd reps/demo.git
+    git init --bare
+    cd /f/xxxx/xxxx
+    git clone /f/reps/demo.git
     
             
 =======
